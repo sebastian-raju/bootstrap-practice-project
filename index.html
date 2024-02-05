@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="./style/style.css">
+
+  
+  <title>practice project</title>
+  <style>
+    .navbar-toggler{
+      transition: 0.5s;
+    }
+    .navbar-toggler:active{
+      opacity: 0.3;
+    }
+    .insidetext::placeholder{
+      color: #c29938;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container nav-container shadow-lg px-4 py-3 rounded-4 bg-light">
+
+      <!-- brand icon -->
+     <div class="navbar-nav justify-content-start flex-grow-1 pe-3"> 
+      
+      <a class="navbar-brand" href="#"><i class="bi bi-bookmark-fill me-1"></i>Net Ninja Pro</a>
+     </div>
+
+     <!-- toggler icon -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- inside toggler button -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <div class="offcanvas-header">
+          <h5h5 class="offcanvas-title" id="offcanvasNavbarLabel">Net Ninja Pro</h5h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- normal menu with search starts -->
+        <div class="offcanvas-body d-lg-flex flex-lg-row flex-column justify-content-center">
+
+          <!-- search section -->
+          <div class="d-flex align-items-lg-center justify-content-lg-center align-items-start flex-grow-1">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 rounded-4 py-1 border-primary-subtle insidetext" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary py-0 rounded-4" type="submit">Search</button>
+              </form>
+          </div>
+
+          <!-- menu section -->
+          <ul class="navbar-nav justify-content-lg-end align-items-lg-center align-items-start flex-grow-2 ps-1 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About the book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Get in touch</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle bg-primary text-white rounded-5 p-2 px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Price details
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </div>
+    </div>
+</nav>
+  <!-- intro -->
+ <section id="intro">
+    <div class="container" style="margin-top: 150px; margin-bottom: 100px;">
+      <div class="row justify-content-center align-items-center"  style="max-width: 1600px;">
+        <div class="col-md-6 text-center text-lg-start">
+          <h1>
+            <div class="display-1">
+              Black Belt
+            </div>
+            <div class="display-4 text-muted">
+              Your coding skills
+            </div>
+          </h1>
+          <p class="fs-6 text-muted mt-lg-3 mt-0 px-lg-0 px-5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam alias, veritatis</p>
+          <div class="mb-3"><a href="#" class="btn btn-primary text-white btn-lg mb-5 mb-lg-0">Buy Now</a></div>
+          <a class="text-secondary text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="offcanvasExample">
+            Explore my other books -->
+          </a>
+          
+          <!-- offcanvas -->
+
+          <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">My other books</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Try scrolling the rest of the page to see this option in action. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum natus doloribus soluta quos molestiae qui voluptatum non inventore, illum fugit mollitia praesentium aspernatur illo omnis, veritatis odio magnam odit ex sed? Rem aliquid quasi, sed veniam magnam architecto praesentium blanditiis.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <span type="text" class="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Net Ninja Book COVER">
+            <img class="img-fluid px-lg-0 px-5" src="./assets/ebook-cover.png" alt=""></span>
+        </div>
+      </div>
+    </div>
+ </section>
+ <!-- pricing -->
+<section id="pricing" class="bg-light">
+ <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2>Pricing Plans</h2>
+      <div class="lead text-muted">choose a pricing plan for you</div>    
+    </div> 
+    <div class="row justify-content-center align-items-center g-0">
+      <div class="col-8 col-lg-4 col-xl-3">
+        <div class="card bg-white py-4 px-5 border-0">
+          <div class="card-title fw-bold text-center">Starter Edition</div>
+          <div class="card-subtitle text-muted text-center mb-3">
+            eBook Download only
+          </div>
+          <div class="card-body p-0 text-center">
+            <div class="display-5 text-primary fw-bold mb-3">$12.99</div>
+            <div class="card-text mb-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nisi quae odio, dolor porro sequi nemo dolore natus sit veritatis!
+            </div>
+            <button id="pricingbutton" class="btn btn-outline-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-9 col-lg-4 ">
+        <div class="card bg-white border-2 border-primary">
+          <div class="card-header text-center text-primary">
+            Most Popular
+          </div>
+         <div class="card-main py-5 px-5">
+            <div class="card-title fw-bold text-center">Complete Edition</div>
+            <div class="card-subtitle text-muted text-center mb-3">
+              eBook Download only
+            </div>
+            <div class="card-body p-0 text-center">
+              <div class="display-4 text-primary fw-bold mb-3">$18.99</div>
+              <div class="card-text mb-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nisi quae odio, dolor porro sequi nemo dolore natus sit veritatis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, consequatur.
+              </div>
+              <button id="pricingbutton" class="btn btn-outline-primary">Buy Now</button>
+            </div>
+         </div>
+        </div>
+      </div>
+  
+      <div class="col-8 col-lg-4 col-xl-3">
+        <div class="card bg-white py-4 px-5 border-0">
+          <div class="card-title fw-bold text-center">Ultimate Edition</div>
+          <div class="card-subtitle text-muted text-center mb-3">
+            eBook Download only
+          </div>
+          <div class="card-body p-0 text-center">
+            <div class="display-5 text-primary fw-bold mb-3">$24.99</div>
+            <div class="card-text mb-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nisi quae odio, dolor porro sequi nemo dolore natus sit veritatis!
+            </div>
+            <button id="pricingbutton" class="btn btn-outline-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+</section>
+
+<!-- accordion section -->
+
+<section id="aboutthebook">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2>
+        Inside the Book
+      </h2>
+      <div class="lead text-muted">
+        A quick glance at the topics you'll learn
+      </div>
+    </div>
+    <div class="row justify-content-around align-items-center">
+      <div class="col-6 col-lg-4">
+        <span type="text" class="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Kindle">
+          <img src="./assets/kindle.png" class="img-fluid" alt="">
+        </span>
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Chapter #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Chapter #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Chapter #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Chapter #4
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- book review -->
+
+<section id="bookreview" class="bg-light">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2><i class="bi bi-stars"></i>Book Review</h2>
+      <p class="text-muted lead">
+        What my students have said about the book..
+      </p>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-8">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">A must buy for every aspiring web-developer</h5>
+              <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Some placeholder content in a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam vitae sint earum animi quae possimus delectus, eaque quidem. Aut.</p>
+            <small>by Raju Sebastian</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">A must buy for every aspiring web-developer</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <p class="mb-1">Some placeholder content in a paragraph. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, placeat porro. At dolore voluptatem odit officia delectus odio explicabo accusantium?</p>
+            <small class="text-body-secondary">by Kochurani Raju</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">A must buy for every aspiring web-developer</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <p class="mb-1">Some placeholder content in a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi ipsa quidem illum iste, beatae tempora voluptate aperiam exercitationem quis?</p>
+            <small class="text-body-secondary">by Raju Sebastian</small>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- get in touch -->
+
+<section id="getintouch">
+  <div class="container py-5">
+    <div class="text-center mb-3">
+      <h2>Get in Touch</h2>
+      <div class="lead text-muted">
+        Question to ask? Fill out the form to contact me directly...
+      </div>
+    </div>
+   <div class="row justify-content-center align-items-center">
+      <div class="col-md-7">
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+           <div class="input-group">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-at"></i>
+              </span>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <span class="input-group-text">
+                <span type="text" class="tt" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Please enter your email address">
+                  <i class="bi bi-question-circle"></i>
+                </span>
+              </span>
+           </div>
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person"></i>
+              </span>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+              <span class="input-group-text">
+                <span type="text" class="tt" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="pretty self explanatory">
+                  <i class="bi bi-question-circle"></i>
+                </span>
+                </span>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="exampleFormControlInput1" class="form-label">What is your question about ?</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="bi bi-question-circle"></i>
+              </span>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" style="height: 140px;" placeholder="Your query..."></textarea>
+          </div>
+          <div class="text-center"><button type="button" class="btn btn-primary text-white" id="submit">Submit</button></div>
+        </form>
+      </div>
+   </div>
+  </div>
+</section>
+
+<!-- modals -->
+
+<section class="bg-light">
+  <div class="container py-5">
+    <div class="text-center mb-3">
+      <h2>Stay in touch</h2>
+      <div class="lead text-muted">
+        Get the latest updates as they happen...
+      </div>
+    </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-7">
+          <p class="mb-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aperiam accusantium necessitatibus cumque enim molestiae dolores dignissimos beatae, perferendis, excepturi obcaecati quod facilis et, impedit eligendi saepe voluptates. Voluptatem, ad!</p>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Register for updates
+            </button>
+          </div>
+        </div>       
+      </div>
+    </div>
+  <!-- modal itself -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Get the latest updates!!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo qui exercitationem repellat perferendis eligendi, quis quaerat repudiandae dolorum, ducimus corrupti corporis delectus! Repellat quam vitae necessitatibus amet consectetur sint!</p>
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary text-white">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</body>
+</html>
